@@ -1,0 +1,8 @@
+{
+  "name": "Gulf Northern X – Preview Recovery",
+  "description": "Premium United States corporate transportation and commercial vehicle services network (Xpress, Xfers, Xtras).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

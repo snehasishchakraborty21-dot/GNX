@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Barlow Condensed', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --gnx-navy: #062B63;
+    --gnx-blue: #0B3F8C;
+    --gnx-green: #2CB51D;
+    --gnx-darkgreen: #087F5B;
+    --gnx-mint: #E4F7EE;
+    --gnx-black: #0A0D0C;
+    --gnx-charcoal: #111827;
+    --gnx-light: #0A0D0C;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #F8FAFC;
+    background-color: var(--gnx-black);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Custom Utilities */
+.font-display {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.text-gradient-gnx {
+  background: linear-gradient(135deg, #FFFFFF 0%, #2CB51D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gnx-gradient {
+  background: linear-gradient(135deg, #062B63 0%, #0B3F8C 60%, #087F5B 100%);
+}
+
+.bg-gnx-dark-gradient {
+  background: linear-gradient(180deg, #0A0D0C 0%, #062B63 100%);
+}
+
+.glow-green {
+  box-shadow: 0 0 25px rgba(44, 181, 29, 0.25);
+}
+
+.glow-blue {
+  box-shadow: 0 0 25px rgba(11, 63, 140, 0.3);
+}
+
+.header-logo {
+  display: block;
+  width: clamp(280px, 18vw, 380px);
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Elegant Dark UI helpers */
+.btn-elegant-primary {
+  background-color: #2CB51D;
+  color: #FFFFFF;
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: all 0.2s ease-in-out;
+}
+.btn-elegant-primary:hover {
+  background-color: #FFFFFF;
+  color: #0A0D0C;
+}
+
+.btn-elegant-secondary {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  color: #FFFFFF;
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: all 0.2s ease-in-out;
+}
+.btn-elegant-secondary:hover {
+  background-color: #FFFFFF;
+  color: #0A0D0C;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0D0C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0B3F8C;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2CB51D;
+}
