@@ -174,18 +174,3 @@ header .logo-wrapper {
 ::-webkit-scrollbar-thumb:hover {
   background: #2CB51D;
 }
-
-/* Developer Credit Typography */
-.developer-credit,
-.developer-credit__text,
-.developer-credit__text *,
-.developer-credit__label,
-.developer-credit__company {
-  font-family: "Century Schoolbook", "Century Schoolbook L", "Bookman Old Style", Georgia, serif !important;
-  font-size: 16px !important;
-  font-weight: 700 !important;
-  font-style: italic !important;
-  line-height: 1.25 !important;
-  letter-spacing: 0.08em !important;
-  text-transform: uppercase !important;
-}

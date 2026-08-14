@@ -151,79 +151,14 @@ export const Footer: React.FC<FooterProps> = ({ onRequestQuote }) => {
       </div>
 
       {/* Developer Credit Strip */}
-      <div
-        className="developer-credit relative w-full overflow-hidden min-h-[82px] py-[22px] sm:py-[26px] px-4 sm:px-6 flex items-center justify-center"
-        style={{
-          background: 'linear-gradient(90deg, #FFFFFF 0%, #F3FBF9 50%, #FFFFFF 100%)',
-          boxShadow: '0 -12px 34px rgba(3, 30, 40, 0.08)'
-        }}
-      >
-        {/* 2px Premium Top Accent Line */}
-        <div
-          className="absolute top-0 left-0 right-0 h-[2px]"
-          style={{
-            background: 'linear-gradient(90deg, transparent, #007F78, #20C96B, #007F78, transparent)'
-          }}
-        />
-
-        {/* Centered Signature Group */}
-        <div className="max-w-[1360px] mx-auto flex items-center justify-center gap-3 sm:gap-4 lg:gap-5 relative z-10">
-          {/* Left Decorative Line & Diamond (Hidden on Mobile) */}
-          <div className="hidden sm:flex items-center" aria-hidden="true">
-            <div
-              className="h-[1px] w-[35px] md:w-[45px] lg:w-[65px]"
-              style={{
-                background: 'linear-gradient(90deg, transparent, #007F78)'
-              }}
-            />
-            <div className="w-[5px] h-[5px] rotate-45 bg-[#007F78] -ml-[1px]" />
-          </div>
-
-          {/* Central Translucent Pill Surface */}
-          <div
-            className="developer-credit__text inline-flex flex-col sm:flex-row items-center justify-center px-4 sm:px-7 py-3 rounded-full border border-[rgba(0,127,120,0.12)] bg-[rgba(255,255,255,0.72)] shadow-[0_8px_24px_rgba(0,80,75,0.07)] text-center gap-1.5 sm:gap-0"
-          >
-            {/* Supporting Label */}
-            <span
-              className="developer-credit__label"
-              style={{
-                color: '#0B0F14'
-              }}
-            >
-              Designed &amp; Developed by
-            </span>
-
-            {/* Slim Vertical Separator (Hidden on Mobile) */}
-            <div
-              className="hidden sm:block w-[1px] h-[22px] lg:h-[24px] bg-[rgba(0,127,120,0.28)] mx-4 lg:mx-5"
-              aria-hidden="true"
-            />
-
-            {/* ASCO GLOBAL SOLUTIONS Focal Point */}
-            <span
-              className="developer-credit__company"
-              style={{
-                color: '#007F78',
-                backgroundImage: 'linear-gradient(90deg, #006F6A 0%, #009688 50%, #00A879 100%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                textShadow: '0 2px 12px rgba(0, 127, 120, 0.12)'
-              }}
-            >
-              ASCO GLOBAL SOLUTIONS
-            </span>
-          </div>
-
-          {/* Right Decorative Line & Diamond (Hidden on Mobile) */}
-          <div className="hidden sm:flex items-center" aria-hidden="true">
-            <div className="w-[5px] h-[5px] rotate-45 bg-[#007F78] -mr-[1px]" />
-            <div
-              className="h-[1px] w-[35px] md:w-[45px] lg:w-[65px]"
-              style={{
-                background: 'linear-gradient(90deg, #007F78, transparent)'
-              }}
-            />
-          </div>
+      <div className="developer-credit w-full bg-white border-t border-[rgba(0,127,120,0.18)] py-[18px] sm:py-[20px] px-5 sm:px-6">
+        <div className="max-w-[1360px] mx-auto flex flex-col sm:flex-row items-center justify-center text-center gap-1 sm:gap-2.5">
+          <span className="font-sans font-medium text-[14px] sm:text-[15px] text-[#315F5C] tracking-[0.02em] leading-normal">
+            Designed &amp; Developed by
+          </span>
+          <span className="font-display font-bold uppercase text-[17px] sm:text-[18px] lg:text-[19px] text-[#007F78] tracking-[0.07em] leading-normal">
+            ASCO GLOBAL SOLUTIONS
+          </span>
         </div>
       </div>
     </footer>
